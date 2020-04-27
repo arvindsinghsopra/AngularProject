@@ -34,6 +34,7 @@ npm install'''
     }
     stage('Test') {
       steps {
+        CHROME_BIN=/usr/bin/google-chrome karma start --single-run
         sh 'npm run --ng test'
       }
     }
