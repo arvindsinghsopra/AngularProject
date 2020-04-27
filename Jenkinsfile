@@ -34,7 +34,8 @@ npm install'''
     }
     stage('Test') {
       steps {
-        sh 'npm run --ng test'
+        sh '''npm i -D puppeteer karma-chrome-launcher
+npm run --ng test'''
       }
     }
   }
