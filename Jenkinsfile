@@ -34,7 +34,6 @@ npm install'''
     }
     stage('Test') {
       steps {
-        export CHROME_BIN='/usr/bin/chromium-browser'
         sh 'npm run --ng test'
       }
     }
