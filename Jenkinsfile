@@ -34,7 +34,7 @@ npm install'''
     }
     stage('Test') {
       steps {
-        CHROME_BIN=/usr/bin/google-chrome karma start --single-run
+        export CHROME_BIN='/usr/bin/chromium-browser'
         sh 'npm run --ng test'
       }
     }
