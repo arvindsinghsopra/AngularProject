@@ -34,7 +34,7 @@ npm install'''
     }
     stage('Test') {
       steps {
-        sh 'npm run --ng test'
+        sh 'npm run --ng test:phantom'
       }
     }
   }
