@@ -1,5 +1,7 @@
 
 
+def templateName = 'angular-pipeline'
+
 pipeline {
     agent {
         node {
