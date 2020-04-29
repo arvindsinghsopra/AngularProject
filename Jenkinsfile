@@ -1,4 +1,5 @@
 
+
 pipeline {
     agent {
         node {
@@ -14,13 +15,13 @@ pipeline {
         EXECUTE_TAG_STAGE = "true"
         EXECUTE_BUILD_STAGE = "true"
 
-        APPLICATION_NAME = 'ng-tomcat-app'
+        APPLICATION_NAME = 'angular-pipeline'
         GIT_REPO = "https://github.com/arvindsinghsopra/AngularProject.git"
         GIT_BRANCH = "master"
         STAGE_TAG = "promoteToQA"
         DEV_PROJECT = "dev"
         STAGE_PROJECT = "stage"
-        TEMPLATE_NAME = "ng-tomcat-app"
+        TEMPLATE_NAME = "angular-pipeline"
         ARTIFACT_FOLDER = "target"
         PORT = 8080;
 
